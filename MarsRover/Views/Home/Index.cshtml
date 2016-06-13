@@ -1,0 +1,89 @@
+﻿<div class="main">
+    <h1>Mars Rover Remote Control</h1>
+
+    <div class="row">        
+        <div class="col-md-8">
+            <select id="rover-picker" class="form-control">
+                <option value="rover_1">Rover 1</option>
+                <option value="rover_2">Rover 2</option>
+            </select>
+            <div><span id="directions"></span></div>
+            <div>
+                <button id="left" class="btn btn-info">Left</button>
+                <button id="forward" class="btn btn-warning">Maintain</button>
+                <button id="right" class="btn btn-info">Right</button>
+            </div>
+            <div>
+                <button id="submit" class="btn btn-success">Send Rovers Scouting</button>
+            </div>
+            <div id="rovers">
+                <div id="rover_1">
+                    <div>
+                        <label id="rover_position_1">Rover one's position</label><span id="roverCurrent_1"></span>
+                    </div>
+                    <div>
+                        <label id="rover_heading_1">Rover one's heading</label><span id="roverHeading_1"></span>
+                    </div>
+                    <div>
+                        <label id="rover_finish_1">Rover one's Final Position</label><span id="roverFinal_1"></span>
+                    </div>
+                </div>
+                <div id="rover_2">
+                    <div>
+                        <label id="rover_position_2">Rover two's position</label><span id="roverCurrent_2"></span>
+                    </div>
+                    <div>
+                        <label id="rover_heading_2">Rover two's heading</label><span id="roverHeading_2"></span>
+                    </div>
+                    <div>
+                        <label id="rover_finish_2">Rover two's Final Position</label><span id="roverFinal_2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" id="sidepanel">
+            <select id="heading">
+                <option value="N">North</option>
+                <option value="E">East</option>
+                <option value="S">South</option>
+                <option value="W">West</option>
+            </select>
+            <div>
+                <input type="radio" class="radio" name="set" value="Set area x coordinate" checked="checked" /><label class="block">Set area x coordinate</label><span id="x-coord"></span>
+            </div>
+            <div>
+                <input type="radio" class="radio" name="set" value="Set area y coordinate" /><label class="block">Set area y coordinate</label><span id="y-coord"></span>
+            </div>
+            <div>
+                <input type="radio" class="radio" name="set" value="Set rover start x coordinate" /><label class="block">Set rover start x coordinate</label><span id="x-start"></span>
+            </div>
+            <div>
+                <input type="radio" class="radio" name="set" value="Set rover start y coordinate" /><label class="block">Set rover start y coordinate</label><span id="y-start"></span>
+            </div>
+            <div>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+            </div>
+            <div>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+            </div>
+            <div>
+                <button class="number" 7">7</button>
+                <button class="number" 8">8</button>
+                <button class="number" 9">9</button>
+            </div>
+            <div>
+                <button class="number">0</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/index.js"></script>
+}
